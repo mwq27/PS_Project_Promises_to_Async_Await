@@ -1,19 +1,8 @@
+import { fetch } from "./services";
+const movies = require("./data/movies.json");
+
 export function fetchMovies() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve([
-        {
-          title: "Die Hard"
-        },
-        {
-          title: "Home Alone"
-        },
-        {
-          title: "Love Actually"
-        }
-      ]);
-    }, 1000);
-  });
+  return fetch(1000).then(() => movies);
 }
 
 const moviePromise = fetchMovies();
