@@ -4,7 +4,7 @@ const path = require("path");
 const acorn = require("acorn");
 const _ = require("lodash");
 
-describe("promises.js", () => {
+describe("index.js", () => {
   context("Function is a promise", () => {
     let file;
     beforeEach(() => {
